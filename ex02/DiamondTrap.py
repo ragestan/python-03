@@ -1,5 +1,3 @@
-"""Exercise 02: Multiple inheritance and properties."""
-
 from S1E7 import Baratheon, Lannister
 
 

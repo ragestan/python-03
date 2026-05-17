@@ -1,25 +1,22 @@
-"""Exercise 04: Static vector calculator."""
-
-
 class calculator:
     """Provide static vector operations."""
 
     @staticmethod
     def dotproduct(v1: list[float], v2: list[float]) -> None:
         """Print the dot product of two vectors."""
-        result = sum(value * other for value, other in zip(v1, v2))
+        result = sum(float(value * other) for value, other in zip(v1, v2))
         print(f"Dot product is: {result}")
 
     @staticmethod
     def add_vec(v1: list[float], v2: list[float]) -> None:
         """Print the element-wise addition of two vectors."""
-        result = [value + other for value, other in zip(v1, v2)]
+        result = [float(value + other) for value, other in zip(v1, v2)]
         print(f"Add Vector is : {result}")
 
     @staticmethod
     def sous_vec(v1: list[float], v2: list[float]) -> None:
         """Print the element-wise subtraction of two vectors."""
-        result = [value - other for value, other in zip(v1, v2)]
+        result = [float(value - other) for value, other in zip(v1, v2)]
         print(f"Sous Vector is: {result}")
 
 

@@ -1,5 +1,3 @@
-"""Exercise 01: Inheritance and special methods."""
-
 from S1E9 import Character
 
 
